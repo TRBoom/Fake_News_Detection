@@ -100,7 +100,8 @@ def untag(tagged_sentence):
 
 
 #Using Word2Vec 
-with open("glove.6B.50d.txt", "rb") as lines:
+
+with open(path+"glove.6B.50d.txt", "rb") as lines:
     w2v = {line.split()[0]: np.array(map(float, line.split()[1:]))
            for line in lines}
 

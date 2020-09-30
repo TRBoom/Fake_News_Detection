@@ -68,7 +68,7 @@ cutoff = int(.75 * len(tagged_sentences))
 training_sentences = DataPrep.train_news['Statement']
  
 print(training_sentences)
-
+'''
 #training POS tagger based on words
 def features(sentence, index):
     """ sentence: [w1, w2, ...], index: the index of the word """
@@ -129,7 +129,7 @@ class MeanEmbeddingVectorizer(object):
         ])
 
 
-"""
+
 class TfidfEmbeddingVectorizer(object):
     def __init__(self, word2vec):
         self.word2vec = word2vec
@@ -157,4 +157,4 @@ class TfidfEmbeddingVectorizer(object):
                 for words in X
             ])
 
-"""
+'''
